@@ -7,6 +7,9 @@
     <title>Contact</title>
 </head>
 <body>
-    Contact
+    <h1>Contact</h1>
+    <a href="{{ route('indexUrl') }}">Home</a>
+    <a href="{{ route('contactUrl') }}">Contact</a>
+    <a href="{{ route('aboutUrl') }}">About</a>
 </body>
 </html>

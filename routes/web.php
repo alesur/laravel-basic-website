@@ -16,16 +16,16 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('indexUrl');
 
 Route::get('/about', function () {
     return view('about');
-})->middleware('token');
+})->name('aboutUrl');
 
 Route::get('/home', function () {
     echo "This is home page";
 });
 
 
-Route::get('/contact', [ContactController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index'])->name('contactUrl');
 
