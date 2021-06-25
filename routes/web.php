@@ -20,6 +20,10 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('about');
+})->middleware('token');
+
+Route::get('/home', function () {
+    echo "This is home page";
 });
 
 
